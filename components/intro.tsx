@@ -4,6 +4,9 @@ import Image from "next/image";
 import React from "react";
 import Dp from "@/public/Dp.jpg";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { BsArrowRight, BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
+import { HiDownload } from "react-icons/hi";
 
 export default function Intro() {
   return (
@@ -44,11 +47,59 @@ export default function Intro() {
         </div>
       </div>
 
-      <p className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl">
+      <motion.p
+        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+      >
         <span className="">
-            Hello! I am Tanay. <strong>MERN Stack Developer</strong> with expertise in <strong>Backend Development</strong> & Cloud Native Technologies, having <strong>1+ year of experience</strong>. I enjoy building stuff, currently learning React.js & Next.js.
+          Hello! I am Tanay. <strong>MERN Stack Developer</strong> with
+          expertise in <strong>Backend Development</strong> & Cloud Native
+          Technologies, having <strong>1+ year of experience</strong>. I enjoy
+          building stuff, currently learning React.js & Next.js.
         </span>
-      </p>
+      </motion.p>
+
+      <motion.div
+        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium "
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+            delay: 0.1,
+        }}
+      >
+        <Link
+          className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full"
+          href="#contact"
+        >
+          Contact Me <BsArrowRight />
+        </Link>
+
+        <a className="bg-white text-gray-900 px-7 py-3 flex items-center gap-2 rounded-full">
+          Resume <HiDownload />
+        </a>
+
+        <a
+          className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full"
+          href="https://github.com/tanayvaswani"
+        >
+          <BsGithub />
+        </a>
+
+        <a
+          className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full"
+          href="https://twitter.com/iTanayVaswani"
+        >
+          <BsTwitter />
+        </a>
+
+        <a
+          className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full"
+          href="https://linkedin.com/in/tanayvaswani"
+        >
+          <BsLinkedin />
+        </a>
+      </motion.div>
     </section>
   );
 }
