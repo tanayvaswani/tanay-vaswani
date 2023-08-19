@@ -54,8 +54,8 @@ export default function Intro() {
       >
         <span className="">
           Hello! I am Tanay. <strong>MERN Stack Developer</strong> with
-          expertise in <strong>Backend Development</strong> & Cloud Native
-          Technologies, having <strong>1+ year of experience</strong>. I enjoy
+          expertise in <strong>Backend Development</strong> & <strong>Cloud Native
+          Technologies</strong>, having <strong>1+ year of experience</strong>. I enjoy
           building stuff, currently learning React.js & Next.js.
         </span>
       </motion.p>
@@ -69,33 +69,36 @@ export default function Intro() {
         }}
       >
         <Link
-          className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           href="#contact"
         >
-          Contact Me <BsArrowRight />
+          Contact Me <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition " />
         </Link>
 
-        <a className="bg-white text-gray-900 px-7 py-3 flex items-center gap-2 rounded-full">
-          Resume <HiDownload />
+        <a className="group bg-white text-gray-900 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10" href="/Resume.pdf" download>
+          Resume <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
         <a
-          className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full"
+          className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10"
           href="https://github.com/tanayvaswani"
+          target="_blank"
         >
           <BsGithub />
         </a>
 
         <a
-          className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full"
+          className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10"
           href="https://twitter.com/iTanayVaswani"
+          target="_blank"
         >
           <BsTwitter />
         </a>
 
         <a
-          className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full"
+          className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10"
           href="https://linkedin.com/in/tanayvaswani"
+          target="_blank"
         >
           <BsLinkedin />
         </a>
