@@ -62,25 +62,32 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Contact Management System",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "A contact management system's backend having user authentication & authorization features, access tokens, password hashing.",
+    tags: ["JavaScript", "Node.js", "Express.js", "JWT", "MongoDB"],
     imageUrl: one,
   },
   {
-    title: "rmtDev",
+    title: "Balancer Robin",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: two,
+      "Implementation of round robin fashion of sending requests to serve on the server, this is the example of same type of fashion of sending messages that is used by Apache Kafka.",
+    tags: ["GO", "Mux", "HTTP", "MongoDB"],
+    imageUrl: one,
   },
   {
-    title: "Word Analytics",
+    title: "gRPC-GO",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: three,
+      "Implementation of demo working of gRPC, methods of communication between client & server in all forms (Unary API, Client-Side Streaming, Server-Side Streaming, Bi-Directional Streaming).",
+    tags: ["GO", "gRPC", "Protocol Buffers"],
+    imageUrl: one,
+  },
+  {
+    title: "PC Book App",
+    description:
+      "A PC book app that generates the random templates for PC/Laptops using CPU, GPU, Keyboard, Screen Resolution, etc. data provided to it using protocol buffers & gRPC.",
+    tags: ["GO", "gRPC", "Protocol Buffers", "MongoDB"],
+    imageUrl: one,
   },
 ] as const;
 
@@ -89,19 +96,17 @@ export const skillsData = [
   "CSS",
   "JavaScript",
   "TypeScript",
+  "GO",
   "React",
   "Next.js",
   "Node.js",
   "Git",
-  "Tailwind",
+  "TailwindCSS",
   "Prisma",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
   "PostgreSQL",
-  "Python",
-  "Django",
+  "Redux",
+  "Express.js",
   "Framer Motion",
+  "Elasticsearch",
 ] as const;
