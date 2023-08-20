@@ -71,7 +71,7 @@ export const projectsData = [
   {
     title: "Balancer Robin",
     description:
-      "Implementation of round robin fashion of sending requests to serve on the server, this is the example of same type of fashion of sending messages that is used by Apache Kafka.",
+      "Implementation of round robin fashion of sending requests to serve on the server, same type of fashion of sending messages that is used by Apache Kafka.",
     tags: ["GO", "Mux", "HTTP", "MongoDB"],
     imageUrl: one,
   },
@@ -85,7 +85,7 @@ export const projectsData = [
   {
     title: "PC Book App",
     description:
-      "A PC book app that generates the random templates for PC/Laptops using CPU, GPU, Keyboard, Screen Resolution, etc. data provided to it using protocol buffers & gRPC.",
+      "A PC book app that generates the random templates for PC/Laptops using CPU, GPU, Keyboard, etc. data provided by compiling proto having gRPC.",
     tags: ["GO", "gRPC", "Protocol Buffers", "MongoDB"],
     imageUrl: one,
   },
