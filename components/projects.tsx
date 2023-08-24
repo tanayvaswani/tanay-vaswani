@@ -8,7 +8,7 @@ import Project from "./project";
 
 export default function Projects() {
   return (
-    <section>
+    <section className="scroll-mt-28" id="projects">
       <Heading>My Projects</Heading>
 
       <div>
