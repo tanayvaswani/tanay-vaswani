@@ -10,7 +10,10 @@ import { HiDownload } from "react-icons/hi";
 
 export default function Intro() {
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]" id="home">
+    <section
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      id="home"
+    >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -54,9 +57,10 @@ export default function Intro() {
       >
         <span className="">
           Hello! I am Tanay. <strong>MERN Stack Developer</strong> with
-          expertise in <strong>Backend Development</strong> & <strong>Cloud Native
-          Technologies</strong>, having <strong>1+ year of experience</strong>. I enjoy
-          building stuff, currently learning React.js & Next.js.
+          expertise in <strong>Backend Development</strong> &{" "}
+          <strong>Cloud Native Technologies</strong>, having{" "}
+          <strong>1+ year of experience</strong>. I enjoy building stuff,
+          currently learning React.js & Next.js.
         </span>
       </motion.h1>
 
@@ -65,18 +69,24 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
-            delay: 0.1,
+          delay: 0.1,
         }}
       >
         <Link
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           href="#contact"
         >
-          Contact Me <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition " />
+          Contact Me{" "}
+          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition " />
         </Link>
 
-        <a className="group bg-white text-gray-900 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10" href="/Resume.pdf" download>
-          Resume <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+        <a
+          className="group bg-white text-gray-900 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
+          href="/Resume.pdf"
+          download
+        >
+          Resume{" "}
+          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
         <a
